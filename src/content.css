@@ -1,0 +1,27 @@
+ul.by-title {
+	color: black;
+	background-color: #acdee2;
+	list-style-type: none;
+	width: 220px;
+	margin-top: 6px;
+}
+
+ul.by-id {
+	color: black;
+	background-color: #acdee2;
+	list-style-type: none;
+	width: 220px;
+	margin-top: 6px;
+}
+
+ul.by-title li {
+	display: inline;
+	margin-left: 6px;
+	padding-right: 24px;
+}
+
+ul.by-id li {
+	display: inline;
+	margin-left: 6px;
+	padding-right: 24px;
+}

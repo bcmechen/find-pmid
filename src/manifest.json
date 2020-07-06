@@ -1,0 +1,33 @@
+{
+	"manifest_version": 2,
+	"name": "Find PMID",
+	"version": "1.3",
+	
+	"description": "Display PMID on Google Scholar.",
+	"icons": {
+		"16": "icon16.png"			
+	},
+	
+	"page_action": {
+		"default_icon": "icon16.png",
+		"default_title": "Find PMID"
+	},
+	
+	"background": {
+		"scripts": ["eventPage.js"],
+		"persistent": false
+	},
+	
+	"content_scripts": [
+		{
+			"matches": ["https://scholar.google.com/*"],
+			"js": ["jquery-3.5.1.min.js", "content.js"],
+			"css": ["content.css"]
+		}
+	],
+	
+	"permissions": [
+		"tabs",
+		"https://scholar.google.com/*"
+	]
+}
